@@ -88,7 +88,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f267670d;
+  /* background-color: #f267670d; */
+  background: -webkit-linear-gradient(180deg, #ffffff,#f5f5f5,#ffffff);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(180deg, #ffffff,#f5f5f5,#ffffff);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
 }
 
 .about-me .container {
@@ -261,7 +262,8 @@ body {
   height: 35px;
 }
 
-.record-tel-2 {
+.record-tel-2,
+.about-img-mobile {
   display: none;
 }
 
@@ -311,6 +313,25 @@ body {
   .about-img,
   .about-me-img {
     display: none;
+  }
+
+  .about {
+    height: fit-content;
+    padding-top: 120px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  .about-img-mobile {
+    display: block;
+    position: relative;
+    transform: translateY(0px);
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .about-subtitle {
+    margin-bottom: 0;
   }
 
   .reviews-list-item {
