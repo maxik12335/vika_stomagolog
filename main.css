@@ -52,7 +52,6 @@ body {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  overflow: hidden;
 }
 
 .about-title {
@@ -94,6 +93,7 @@ body {
 
 .about-me .container {
   display: flex;
+  align-items: center;
 }
 
 .about-me-img {
@@ -120,7 +120,7 @@ body {
 }
 
 .reviews {
-  padding: 100px 0;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
