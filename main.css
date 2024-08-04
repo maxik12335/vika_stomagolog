@@ -413,11 +413,11 @@ body {
 
   .block {
     display: block;
-    height: 400px;
+    height: 500px;
   }
 
   .about-img-mobile {
-    height: 400px;
+    height: 500px;
     top: 54%;
   }
 }
