@@ -267,6 +267,10 @@ body {
   display: none;
 }
 
+.block {
+  display: none;
+}
+
 @media (max-width: 1250px) {
   .container {
     width: 800px;
@@ -322,16 +326,23 @@ body {
     text-align: center;
   }
 
+  .block {
+    display: block;
+    height: 500px;
+  }
+
   .about-img-mobile {
     display: block;
+    height: 500px;
+    /* display: block;
     position: relative;
     transform: translateY(0px);
-    margin: 0 auto;
     margin-bottom: 50px;
+    margin-left: 114px; */
   }
 
   .about-subtitle {
-    margin-bottom: 0;
+    margin-bottom: 50px;
   }
 
   .reviews-list-item {
@@ -365,6 +376,7 @@ body {
   .container {
     width: 365px;
   }
+
   .about {
     text-align: center;
   }
@@ -397,5 +409,15 @@ body {
 
   .record-title {
     font-size: 35px;
+  }
+
+  .block {
+    display: block;
+    height: 400px;
+  }
+
+  .about-img-mobile {
+    height: 400px;
+    top: 54%;
   }
 }
