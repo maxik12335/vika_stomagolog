@@ -70,16 +70,20 @@ body {
 .about-title {
   font-size: 75px;
   line-height: 60px;
-  font-weight: 300;
+  font-weight: 900;
   margin-bottom: 40px;
   text-transform: lowercase;
 }
 
 .about-subtitle {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 300;
-  color: #67b4f2;
-  text-transform: uppercase;
+  /* color: white; */
+  text-transform: lowercase;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 40px 50px;
+  /* background-color: #67b4f2; */
 }
 
 .about-subtitle-mb-30 {
@@ -95,10 +99,11 @@ body {
 
 .about-img {
   position: absolute;
-  right: 100px;
+  right: 0%;
   top: 50%;
   height: 750px;
   transform: translateY(-50%);
+  z-index: -1;
 }
 
 .education__title {
@@ -107,6 +112,9 @@ body {
   font-weight: 700; 
   text-transform: uppercase; 
   text-align: center;
+  background-color: #67b4f2;
+  color: white;
+  padding: 20px;
 } 
 
 .education__list-title {
@@ -156,6 +164,7 @@ body {
   font-weight: normal;
   background-color: black;
   background-color: #00000078;
+  background-color: #67b4f2;
   border-radius: 3px;
   color: white;
   margin-bottom: 5px;
