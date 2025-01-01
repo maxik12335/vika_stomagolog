@@ -10,55 +10,99 @@
   <title>Стоматолог Виктория</title>
 </head>
 <body>
-  <header class="header">
+  <header class="nav">
     <div class="container">
       <div class="logo">
         <h3 class="logo__title">
           Врач-стоматолог
         </h3>
         <p class="logo__subtitle">
-          дипломированный стоматолог
+          Орлова Виктория Алекснандровна
         </p>
       </div>
+
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="#about">обо мне</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="#education">образование</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="#portfolio">до / после</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="#uslugy">услуги</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__item-link" href="#reviews">отзывы</a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main class="main">
-    <section class="about">
+    <section class="header">
       <div class="container">
-        <h1 class="about-title">
-          Врач-стоматолог
+        <img class="header__img" src="img/zub.png" alt="">
+        <h1 class="header-title">
+          Эстетика и здоровье вашей улыбки
         </h1>
-        <h2 class="about-subtitle about-subtitle-mb-30">
-          Здравствуйте ! Рада видеть на моей странице ! <br>
-          Меня зовут Орлова Виктория Александровна <br> Я, врач-стоматолог
+        <h2 class="header-subtitle header-subtitle-mb-30">
+          Индивидуальный подход к каждому пациенту
         </h2>
 
-        <img class="about-img about-img-mobile" src="images/about.png" alt="">
-         <!-- <div class="block"></div> -->
-        <img class="about-img" src="images/about.png" alt="">
+        <a class="header__button" href="#record">
+          Запись на консультацию
+        </a>
       </div>
     </section>
 
-    <!--  -->
-    <section class="education slider-imges__position">
+    <!-- about -->
+     <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <h2 class="about__title">
+            <span>Стоматолог</span> <br> <span>Орлова Виктория Алекснандровна</span>
+          </h2>
+  
+          <!-- <p class="about__description"> -->
+            <span class="about__description">Опыт в эстетической стоматологии — 10 лет</span> <br>
+            <span class="about__description">Забочусь о каждом зубе, как о собственном</span> <br>
+            <span class="about__description">Моя цель — здоровая и уверенная улыбка пациентов</span>
+          <!-- </p> -->
+        </div>
+
+        <img class="about__img" src="images/about.png" alt="">
+      </div>
+     </section>
+
+    <!-- education -->
+    <section class="education slider-imges__position" id="education">
       <div class="container">
         <h2 class="education__title">образование / education</h2>
 
         <h3 class="education__list-title">ВУЗы</h3>
 
         <ul class="education__list">
-          <li class="education__list-item">
+          <li class="education__list-item education-vus">
             <a class="education-list-item__link" href="https://kirovgma.ru/" target="_blank">
               <img class="education-list-item__img" src="img/education-1.jpg" alt="">
             </a>
-            <h4 class="education-list-item__title">Кировский государственный медицинский университет</h4>
+            <div class="education__list-item-content">
+              <h4 class="education-list-item__title">Кировский государственный медицинский университет</h4>
+              <h5 class="education-list-item__title-h5">г. Киров</h5>
+              <h5 class="education-list-item__title-h5">"Специализация 'Стоматология' г. 2019 - 2024"</h5>
+            </div>
+            <!-- <h4 class="education-list-item__title">Кировский государственный медицинский университет</h4>
             <h5 class="education-list-item__title-h5">г. Киров</h5>
-            <h5 class="education-list-item__title-h5">"Специализация 'Стоматология' г. 2019 - 2024"</h5>
+            <h5 class="education-list-item__title-h5">"Специализация 'Стоматология' г. 2019 - 2024"</h5> -->
           </li>
         </ul>
        
-        <h3 class="education__list-title">Доп курсы</h3>
+        <h3 class="education__list-title">Сертификаты </h3>
 
         <ul class="education__list">
           <li class="education__list-item">
@@ -109,26 +153,46 @@
       </div>
     </section>
 
-    <section class="about-me">
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
       <div class="container">
-        <!-- <div class="about-me-image">
-          <img class="about-me-img" src="images/about-me.png" alt="">
-        </div> -->
-        <div class="about-me-content">
-          <!-- <h1 class="about-me-title">
-            Cтоматолог Виктория Орлова
-          </h1> -->
-          <!-- <h2 class="about-me-subtitle">
-            Успешно прошла стажировку в одной из лучших клиник Кирова
-          </h2> -->
-          <p class="about-me-description">
-            Нфыв
-          </p>
-        </div>
+        <h2 class="portfolio__title">Отбеливание - Безопасно и эффективно</h2>
+        <h3 class="education__list-title portfolio__list-title">до / после</h3>
+        <ul class="portfolio-list">
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__item-img" src="img/before_after-3.jpg" alt="">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__item-img" src="img/before_after-4.jpg" alt="">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__item-img" src="img/before_after-5.jpg" alt="">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__item-img" src="img/before_after-6.jpg" alt="">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__item-img" src="img/before_after-7.jpg" alt="">
+          </li>
+          <li class="portfolio-list__item">
+            <img class="portfolio-list__item-img" src="img/before_after-8.jpg" alt="">
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="reviews">
+    <!-- price -->
+    <section class="uslugy" id="uslugy">
+      <div class="container">
+        <h2 class="uslugy__title">Что я предлагаю ?</h2>
+        <p class="uslugy__description">
+          Профессиональная чистка, гигиена на высшем уровне и отбеливание для естественной белизны зубов
+        </p>
+      </div>
+    </section>
+
+    <!-- reviews -->
+    <section class="reviews" id="reviews">
       <div class="container">
         <h2 class="reviews-title">
           Что говорят пациенты
@@ -148,7 +212,7 @@
               </p>
             </div>
 
-            <img class="gallary-img" src="images/image-1.png" alt="">
+            <!-- <img class="gallary-img" src="images/image-1.png" alt=""> -->
           </li>
           <li class="reviews-list-item">
             <div>
@@ -163,7 +227,7 @@
               </p>
             </div>
 
-            <img class="gallary-img" src="images/image-2.png" alt="">
+            <!-- <img class="gallary-img" src="images/image-2.png" alt=""> -->
           </li>
           <li class="reviews-list-item">
             <div>
@@ -178,7 +242,7 @@
               </p>
             </div>
 
-            <img class="gallary-img" src="images/image-3.png" alt="">
+            <!-- <img class="gallary-img" src="images/image-3.png" alt=""> -->
           </li>
           <li class="reviews-list-item">
             <div>
@@ -193,7 +257,7 @@
               </p>
             </div>
 
-            <img class="gallary-img" src="images/image-4.png" alt="">
+            <!-- <img class="gallary-img" src="images/image-4.png" alt=""> -->
           </li>
         </ul>
       </div>
@@ -205,7 +269,8 @@
       </div>
     </section>
 
-    <section class="record">
+    <!-- record -->
+    <section class="record" id="record">
       <div class="container">
         <h2 class="record-title">
           Чем могу помочь ?
