@@ -6,13 +6,66 @@
   <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/specific_class.css">
   <title>Стоматолог Виктория</title>
 </head>
 <body>
+  <!-- COMPONENTS -->
+    <!-- 1. modal -->
+      <!-- <div class="modal">
+        <div class="modal__container">
+          <div class="modal__close-button">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div> -->
+
   <header class="nav">
     <div class="container">
-      <div class="logo">
+
+      <!-- modal -->
+      <div class="modal" id="modal-nav">
+        <div class="modal__container">
+          <div class="modal__close-button">
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="logo">
+            <h3 class="logo__title">
+              Врач-стоматолог
+            </h3>
+            <p class="logo__subtitle">
+              Орлова Виктория Алекснандровна
+            </p>
+          </div>
+    
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__item-link" href="#about">обо мне</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__item-link" href="#education">образование</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__item-link" href="#uslugy">услуги</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__item-link" href="#record">запись</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <button class="button margin-0-auto hide-lg show-md" data-modal="nav">
+        меню
+      </button>
+
+      <div class="logo show-lg hide-md">
         <h3 class="logo__title">
           Врач-стоматолог
         </h3>
@@ -21,7 +74,7 @@
         </p>
       </div>
 
-      <nav class="navigation">
+      <nav class="navigation show-lg hide-md">
         <ul class="nav-list">
           <li class="nav-list__item">
             <a class="nav-list__item-link" href="#about">обо мне</a>
@@ -30,13 +83,10 @@
             <a class="nav-list__item-link" href="#education">образование</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__item-link" href="#portfolio">до / после</a>
-          </li>
-          <li class="nav-list__item">
             <a class="nav-list__item-link" href="#uslugy">услуги</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__item-link" href="#reviews">отзывы</a>
+            <a class="nav-list__item-link" href="#record">запись</a>
           </li>
         </ul>
       </nav>
@@ -46,12 +96,12 @@
   <main class="main">
     <section class="header">
       <div class="container">
-        <img class="header__img" src="img/zub.png" alt="">
+        <img class="header__img" src="img/zub-2.png" alt="">
         <h1 class="header-title">
-          Эстетика и здоровье вашей улыбки
+          Улыбайтесь по-настоящему
         </h1>
         <h2 class="header-subtitle header-subtitle-mb-30">
-          Индивидуальный подход к каждому пациенту
+          Доверие - Забота - Здоровье
         </h2>
 
         <a class="header__button" href="#record">
@@ -65,13 +115,38 @@
       <div class="container">
         <div class="about-content">
           <h2 class="about__title">
-            <span>Стоматолог</span> <br> <span>Орлова Виктория Алекснандровна</span>
+            Стоматолог
           </h2>
+
+          <h3 class="about__subtitle">
+            Орлова Виктория Алекснандровна
+          </h3>
   
           <!-- <p class="about__description"> -->
-            <span class="about__description">Опыт в эстетической стоматологии — 10 лет</span> <br>
+            <p class="about__description">
+              <span>
+                Приветствую ! Я врач-стоматолог
+              </span>
+
+              <span>
+                Мой опыт работы помощником и специализация в чистках позволили мне понять, насколько важна забота и внимание к каждому пациенту
+              </span>
+
+              <span>
+                Я стремлюсь не только лечить, но и создавать атмосферу доверия и комфорта
+              </span>
+
+              <span>
+                Поэтому буду тебе рада ! Ты в надёжных руках !
+              </span>
+
+              <a class="header__button about__button" href="#record">
+                запись на консультацию
+              </a>
+            </p>
+            <!-- <span class="about__description">Опыт в эстетической стоматологии — 10 лет</span> <br>
             <span class="about__description">Забочусь о каждом зубе, как о собственном</span> <br>
-            <span class="about__description">Моя цель — здоровая и уверенная улыбка пациентов</span>
+            <span class="about__description">Моя цель — здоровая и уверенная улыбка пациентов</span> -->
           <!-- </p> -->
         </div>
 
@@ -80,11 +155,10 @@
      </section>
 
     <!-- education -->
-    <section class="education slider-imges__position" id="education">
+    <section class="education slider-imges__position padding-bottom-md-70" id="education">
       <div class="container">
         <h2 class="education__title">образование / education</h2>
 
-        <h3 class="education__list-title">ВУЗы</h3>
 
         <ul class="education__list">
           <li class="education__list-item education-vus">
@@ -102,7 +176,6 @@
           </li>
         </ul>
        
-        <h3 class="education__list-title">Сертификаты </h3>
 
         <ul class="education__list">
           <li class="education__list-item">
@@ -153,41 +226,34 @@
       </div>
     </section>
 
-    <!-- portfolio -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <h2 class="portfolio__title">Отбеливание - Безопасно и эффективно</h2>
-        <h3 class="education__list-title portfolio__list-title">до / после</h3>
-        <ul class="portfolio-list">
-          <li class="portfolio-list__item">
-            <img class="portfolio-list__item-img" src="img/before_after-3.jpg" alt="">
-          </li>
-          <li class="portfolio-list__item">
-            <img class="portfolio-list__item-img" src="img/before_after-4.jpg" alt="">
-          </li>
-          <li class="portfolio-list__item">
-            <img class="portfolio-list__item-img" src="img/before_after-5.jpg" alt="">
-          </li>
-          <li class="portfolio-list__item">
-            <img class="portfolio-list__item-img" src="img/before_after-6.jpg" alt="">
-          </li>
-          <li class="portfolio-list__item">
-            <img class="portfolio-list__item-img" src="img/before_after-7.jpg" alt="">
-          </li>
-          <li class="portfolio-list__item">
-            <img class="portfolio-list__item-img" src="img/before_after-8.jpg" alt="">
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- price -->
+    <!-- uslugy -->
     <section class="uslugy" id="uslugy">
       <div class="container">
         <h2 class="uslugy__title">Что я предлагаю ?</h2>
         <p class="uslugy__description">
           Профессиональная чистка, гигиена на высшем уровне и отбеливание для естественной белизны зубов
         </p>
+
+        <ul class="uslugy-list">
+          <li class="uslugy-list__item">
+            <img class="uslugy-list__item-img" src="img/before_after-3.jpg" alt="">
+          </li>
+          <li class="uslugy-list__item">
+            <img class="uslugy-list__item-img" src="img/before_after-4.jpg" alt="">
+          </li>
+          <li class="uslugy-list__item">
+            <img class="uslugy-list__item-img" src="img/before_after-5.jpg" alt="">
+          </li>
+          <li class="uslugy-list__item">
+            <img class="uslugy-list__item-img" src="img/before_after-6.jpg" alt="">
+          </li>
+          <li class="uslugy-list__item">
+            <img class="uslugy-list__item-img" src="img/before_after-7.jpg" alt="">
+          </li>
+          <li class="uslugy-list__item">
+            <img class="uslugy-list__item-img" src="img/before_after-8.jpg" alt="">
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -263,12 +329,6 @@
       </div>
     </section>
 
-    <section class="map">
-      <div class="container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16629.556450768447!2d49.63834787657142!3d58.60065981526405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fcf432b35227e3%3A0x469a34aac90df4aa!2z0JrQntCT0JHQo9CXINCa0LjRgNC-0LLRgdC60LjQuSDQutC70LjQvdC40YfQtdGB0LrQuNC5INGB0YLQvtC80LDRgtC-0LvQvtCz0LjRh9C10YHQutC40Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1722636609440!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </section>
-
     <!-- record -->
     <section class="record" id="record">
       <div class="container">
@@ -279,7 +339,7 @@
           Болит зуб, не знаешь какую пасту подобрать, боишься идти к стоматологу ?
         </p>
         <p class="record-description">
-          Если да, то предлагаю записаться на консультацию. Стоит всего 500 рублей
+          Приходи на консультацию !
         </p>
 
         <a class="record-tel" href="https://t.me/vetch24" target="_blank">
@@ -289,90 +349,129 @@
 
         <a class="record-tel record-tel-2" href="tel:+79229130131" target="_blank">
           <span>записаться</span>
-          <span class="record-tel__tel">+7 (922) 913-01-31</span>
         </a>
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16629.556450768447!2d49.63834787657142!3d58.60065981526405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43fcf432b35227e3%3A0x469a34aac90df4aa!2z0JrQntCT0JHQo9CXINCa0LjRgNC-0LLRgdC60LjQuSDQutC70LjQvdC40YfQtdGB0LrQuNC5INGB0YLQvtC80LDRgtC-0LvQvtCz0LjRh9C10YHQutC40Lkg0YbQtdC90YLRgA!5e0!3m2!1sru!2sru!4v1722636609440!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
 
   <script>
-    // ------------- start СЛАЙДЕР start ------------- 
-    // slider-imge - слайдер
-      // * sупростить названия классов
-      // * упростить названия переменных
-      // * вынести в шаблон
-      
-    const sliderImgesPageNumber = document.querySelector('.slider-imges__pages span')
-    const educationListItemImg = document.querySelectorAll('.education-list-item__img')
-    const sliderImges = document.querySelector('.slider-imges')
-    const sliderImagesClose = document.querySelector('.slider-images__close')
-    const sliderImgesListContainer = document.querySelector('.slider-imges__list-container')
-    const sliderImgesPagesImgLeft = document.querySelector('.slider-imges__pages-img-left')
-    const sliderImgesPagesImgRight = document.querySelector('.slider-imges__pages-img-right')
+    // ------------- all modal -------------
+    // 1. Open / Close modal (button)
+      document.addEventListener("click", (event) => {
+        const target = event.target;
+        const body =  document.querySelector('body')
 
-    // open modal sliderImges
-    educationListItemImg.forEach(educationImgItem => {
-      educationImgItem.addEventListener('click', () => {
-        if(educationImgItem.id != '') {
-          sliderImges.classList.add('slider-imges__show')
-          sliderImgesPageNumber.textContent = educationImgItem.id.at(-1)
-          console.log(sliderImgesPageNumber.textContent)
-          clearAndSetClassSliderImgesListContainer(educationImgItem.id.at(-1))
+        // Закрытие модального окна
+        const closeModalButton = target.closest(".modal__close-button")
+        if (closeModalButton) {
+          const modal = closeModalButton.closest(".modal");
+          if (modal) {
+            modal.classList.remove("show-flex");
+            body.classList.remove('overflow-hidden')
+          }
+          return;
+        }
+
+        // Закрытие модального окна (по элементам меню)
+        if (target.closest('.nav-list__item')) {
+          const modal = target.closest('.modal')
+          if(modal) {
+            modal.classList.remove('show-flex');
+            body.classList.remove('overflow-hidden')
+          }
+          return;
+        }
+
+        // Открытие модального окна
+        if(target.dataset.modal) {
+          const modal = document.getElementById(`modal-${target.dataset.modal}`);
+          if(modal && !modal.contains(target)) {
+            modal.classList.add("show-flex");
+            body.classList.add('overflow-hidden')
+          }
+        }
+      });
+
+
+    // ------------- start СЛАЙДЕР start ------------- 
+      // slider-imge - слайдер
+        // * sупростить названия классов
+        // * упростить названия переменных
+        // * вынести в шаблон
+      
+      const sliderImgesPageNumber = document.querySelector('.slider-imges__pages span')
+      const educationListItemImg = document.querySelectorAll('.education-list-item__img')
+      const sliderImges = document.querySelector('.slider-imges')
+      const sliderImagesClose = document.querySelector('.slider-images__close')
+      const sliderImgesListContainer = document.querySelector('.slider-imges__list-container')
+      const sliderImgesPagesImgLeft = document.querySelector('.slider-imges__pages-img-left')
+      const sliderImgesPagesImgRight = document.querySelector('.slider-imges__pages-img-right')
+
+      // open modal sliderImges
+      educationListItemImg.forEach(educationImgItem => {
+        educationImgItem.addEventListener('click', () => {
+          if(educationImgItem.id != '') {
+            sliderImges.classList.add('slider-imges__show')
+            sliderImgesPageNumber.textContent = educationImgItem.id.at(-1)
+            console.log(sliderImgesPageNumber.textContent)
+            clearAndSetClassSliderImgesListContainer(educationImgItem.id.at(-1))
+          }
+        })
+      })
+
+      // close modal sliderImges
+      sliderImagesClose.addEventListener('click', () => sliderImges.classList.remove('slider-imges__show'))
+
+      // button left sliderImges
+      sliderImgesPagesImgLeft.addEventListener('click', () => {
+        if(sliderImgesPageNumber.textContent == '1') {
+          sliderImgesListContainer.classList.remove('slider-imges__list-container-1')
+          sliderImgesListContainer.classList.add('slider-imges__list-container-4')
+          sliderImgesPageNumber.textContent = '4'
+        } else {
+          stepSlideSliderImges('left')
         }
       })
-    })
 
-    // close modal sliderImges
-    sliderImagesClose.addEventListener('click', () => sliderImges.classList.remove('slider-imges__show'))
-
-    // button left sliderImges
-    sliderImgesPagesImgLeft.addEventListener('click', () => {
-      if(sliderImgesPageNumber.textContent == '1') {
-        sliderImgesListContainer.classList.remove('slider-imges__list-container-1')
-        sliderImgesListContainer.classList.add('slider-imges__list-container-4')
-        sliderImgesPageNumber.textContent = '4'
-      } else {
-        stepSlideSliderImges('left')
-      }
-    })
-
-    // button right sliderImges
-    sliderImgesPagesImgRight.addEventListener('click', () => {
-      if(sliderImgesPageNumber.textContent == '4') {
-        sliderImgesListContainer.classList.remove('slider-imges__list-container-4')
-        sliderImgesListContainer.classList.add('slider-imges__list-container-1')
-        sliderImgesPageNumber.textContent = '1'
-      } else {
-        stepSlideSliderImges('right')
-      }
-    })
-
-    function stepSlideSliderImges(arrowLine) {
-      sliderImgesListContainer.classList.remove(`slider-imges__list-container-${sliderImgesPageNumber.textContent}`)
-
-      const numberPage = (arrowLine == 'left') ? +sliderImgesPageNumber.textContent - 1 : +sliderImgesPageNumber.textContent + 1
-
-      sliderImgesListContainer.classList.add(`slider-imges__list-container-${numberPage}`)
-      sliderImgesPageNumber.textContent = numberPage
-    }
-
-    function clearAndSetClassSliderImgesListContainer(educationImgItemIdNumber) {
-      // список классов img
-      const classList = [
-        'slider-imges__list-container-1',
-        'slider-imges__list-container-2',
-        'slider-imges__list-container-3',
-        'slider-imges__list-container-4',
-      ]
-
-      // очистка от классов 'classList'
-      classList.forEach(classItem => {
-        sliderImgesListContainer.classList.contains(classItem) ? sliderImgesListContainer.classList.remove(classItem) : ''
+      // button right sliderImges
+      sliderImgesPagesImgRight.addEventListener('click', () => {
+        if(sliderImgesPageNumber.textContent == '4') {
+          sliderImgesListContainer.classList.remove('slider-imges__list-container-4')
+          sliderImgesListContainer.classList.add('slider-imges__list-container-1')
+          sliderImgesPageNumber.textContent = '1'
+        } else {
+          stepSlideSliderImges('right')
+        }
       })
 
-      // установка класса
-      sliderImgesListContainer.classList.add(`slider-imges__list-container-${educationImgItemIdNumber}`)
-    }
+      function stepSlideSliderImges(arrowLine) {
+        sliderImgesListContainer.classList.remove(`slider-imges__list-container-${sliderImgesPageNumber.textContent}`)
+
+        const numberPage = (arrowLine == 'left') ? +sliderImgesPageNumber.textContent - 1 : +sliderImgesPageNumber.textContent + 1
+
+        sliderImgesListContainer.classList.add(`slider-imges__list-container-${numberPage}`)
+        sliderImgesPageNumber.textContent = numberPage
+      }
+
+      function clearAndSetClassSliderImgesListContainer(educationImgItemIdNumber) {
+        // список классов img
+        const classList = [
+          'slider-imges__list-container-1',
+          'slider-imges__list-container-2',
+          'slider-imges__list-container-3',
+          'slider-imges__list-container-4',
+        ]
+
+        // очистка от классов 'classList'
+        classList.forEach(classItem => {
+          sliderImgesListContainer.classList.contains(classItem) ? sliderImgesListContainer.classList.remove(classItem) : ''
+        })
+
+        // установка класса
+        sliderImgesListContainer.classList.add(`slider-imges__list-container-${educationImgItemIdNumber}`)
+      }
 
     // ------------- end СЛАЙДЕР end ------------- 
 

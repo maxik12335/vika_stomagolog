@@ -1,0 +1,43 @@
+.margin-0-auto {
+  margin: 0 auto;
+}
+
+.show-block {
+  display: block;
+}
+
+.show-flex {
+  display: flex;
+}
+
+.overflow-hidden {
+  overflow: hidden;  
+}
+
+/* 
+  xs - для экранов 350px - 500px
+  sm - для экранов 500px - 800px
+  md - для экранов 800px - 1200px
+  lg - для экранов 1200px+ 
+*/
+
+.show-lg { display: block; }
+.hide-lg { display: none; }
+
+/* Медиа-запросы с вашими значениями */
+@media (max-width: 1240px) {
+  .show-md { display: block; }
+  .hide-md { display: none; }
+  .padding-bottom-md-70 { padding-bottom: 70px; }
+}
+
+@media (max-width: 830px) {
+  .show-sm { display: block; }
+  .hide-sm { display: none; }
+  .text-align-cetner-sm { text-align: center; }
+}
+
+@media (max-width: 530px) {
+  .show-xs { display: block; }
+  .hide-xs { display: none; }
+}
