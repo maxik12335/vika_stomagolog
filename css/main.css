@@ -1010,7 +1010,9 @@ section:nth-child(2n+1) {
   .about__img {
     position: absolute;
     z-index: -1;
-    top: 160px;
+    top: 220px;
+    width: 80%;
+    height: 600px;
   }
 
   .about__description {
