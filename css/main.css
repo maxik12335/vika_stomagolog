@@ -1075,7 +1075,7 @@ section:nth-child(2n+1) {
 
 @media (max-width: 530px) {
   .container {
-    width: 365px;
+    width: 90%;
   }
 
   .about {
